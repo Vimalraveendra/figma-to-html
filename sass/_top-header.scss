@@ -10,11 +10,10 @@
                 gap:$spacing-xs;
 
                           span {
-                    
                             @include fontTypography($font-semibold,$size-sm,$white-color)
                           }
-              }
+              }  
+        }
+}
 
-        
-}
-}
+
