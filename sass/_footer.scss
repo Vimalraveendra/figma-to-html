@@ -70,3 +70,21 @@
         }
     }
 }
+
+
+@include smallScreens (700px) {
+    #footer{
+      .wrapper{
+           .links-container{
+              align-items: initial;
+              justify-content: initial;
+
+              .links-wrapper{
+                  flex-direction: column-reverse;
+                  justify-content: space-evenly;
+              }
+           }
+      }
+    }
+
+}
