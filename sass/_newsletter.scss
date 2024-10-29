@@ -1,0 +1,85 @@
+#newsletter{
+    margin-top: 28px;
+     .wrapper{
+         .newsletter-container{
+            background: $secondary-color;
+            height: 160px;
+            max-height: 160px;
+            border-radius: $radius-md;
+            @include flex(null,space-between);
+            position: relative;
+              .illustration{
+                margin-left: 60px;
+          
+              }
+            article{
+             margin-right: 208px;
+
+                h3{
+                    @include fontTypography($font-bolder,$size-xl,$primary-color);
+                     span{
+                        @include fontTypography($font-black,$size-xxl,$primary-color);
+                     }
+                }
+                p{
+                    @include fontTypography($font-medium,$size-sm,$primary-color);
+                  
+                }
+
+            }
+            form{
+                width: 340px;
+                height: 74px;
+                margin-right: 98px;
+
+                .form-group{
+                    width: 340px;
+                    position: relative;
+               
+                    .email{
+                        width:100%;
+                        height: 48px;
+                        border-radius: 100px;
+                        border: 1px solid #E9E9E9;
+                        padding-left:$spacing-lg;
+                        @include fontTypography($font-regular,$size-small,$grey-color);
+                    }
+                    .round-arrow{
+                        position: absolute;
+                            right: 4px;
+                            top: 3px;
+                            bottom: 3px;
+                    }
+                    
+                }
+
+                .form-regulations{
+                    @include flex(null,null);
+                    margin: 8px 0px  0px 6px;
+
+                    .regulations{
+                        width:16px;
+                        height: 16px;
+                        border-radius: $radius-xs;
+                        -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            border: none;
+                            outline: none;
+                        margin-right: $spacing-xxs;
+                        background: $primary-color;
+                      
+                    }
+                    label{
+                        @include fontTypography($font-regular,$size-xs,$primary-color);
+                
+                         span{
+                            text-decoration: underline;
+                         }
+                    }
+                }
+                
+            }
+         }
+     }
+}
