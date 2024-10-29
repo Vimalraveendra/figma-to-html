@@ -17,9 +17,12 @@
                       position: relative;
                       overflow: hidden;
                       border-radius: 16px;
-            
-
                       font-size:0px;
+
+                      .lazy-loading{
+                        filter: blur(10px); 
+                     }
+          
                       &:hover img {
                         cursor: pointer;
                         box-shadow: 0px 0px 20px 0px #1d1c1c40;
