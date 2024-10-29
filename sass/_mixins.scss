@@ -1,7 +1,7 @@
 
 
 @mixin transition{
-    transition: all 0.3s ease-in-out;
+    transition: all 1.5s ease-in-out;
 }
 
 @mixin flex($dir, $content: center, $items: center){
