@@ -59,3 +59,28 @@
                 }
           }
         }
+
+
+        /*=============MEDIA QUERIES(SMALL DEVICES)===========*/
+
+
+@include smallScreens(700px) {
+  #categories{
+              .wrapper{
+                  .category-container {
+                  grid-template-columns: initial;
+                  .category{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                     
+                     .category-image{
+                        h2{
+                          opacity: 1;
+                          @include fontTypography($font-black,$size-xl,$white-color);
+                        }
+                     }
+                  }
+          }
+        }
+      }
+    }
