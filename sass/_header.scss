@@ -137,3 +137,118 @@ header{
   }
   }
   }
+
+
+
+/*=============MEDIA QUERIES(MEDIUM DEVICES)===========*/
+
+@include desktop(1350px) {
+  header{
+     .wrapper{
+        nav{
+                .nav-left{
+                        ul{
+                                li {
+                                  margin-right: $spacing-md;
+                                          a{
+                                            font-size: $size-sm;
+                                          }
+                                }
+                        }
+                }
+                .nav-right{
+                  .mobile-menu{
+                    display: block;
+                  }
+               }
+               
+        }
+     }
+  }
+   
+  
+}
+
+@include desktop (1200px) {
+  header{
+     .wrapper{
+        nav{
+
+          display: grid;
+             grid-template-columns: repeat(2,1fr);
+             margin:48px  10px  0px;  
+                .nav-left{
+                  ul{
+                       display: none;
+                   }
+                  }
+                }
+
+        }
+     }
+  }
+   
+  
+
+
+/*=============MEDIA QUERIES(SMALL DEVICES)===========*/
+
+
+@include smallScreens (700px) {
+  header{
+    .wrapper{
+                    nav{         
+                      margin-top: 24px;
+                            .nav-left{
+                              .logo{
+                                margin-right: $spacing-xs;
+                              }
+                              ul{
+                              display: none;
+                              }
+                            }
+
+                            .nav-right{
+                                .search-container{
+                                          position: absolute;
+                                          left: 0px;
+                                          width: 96%;
+                                          top: 43px;
+                                          margin-left: 14px;
+                                          margin-top:24px;
+                                }
+                            }
+                    }
+              .hero-container{
+                margin-top: 100px;
+
+                  .left-arrow, .right-arrow{
+                    display: none !important;
+                  }
+
+                  .hero-info{
+                    left:$spacing-lg;
+                    bottom:90px;
+                  }
+                  .btn{
+                    left:$spacing-lg;
+                    right:0px;
+                    bottom:30px;
+                  }
+                  }
+       }
+    }
+ }
+  
+ @include smallScreens(370px) {
+  header{
+    .wrapper{
+                    nav{    
+                      margin: 48px 0px 0px;
+                      .nav-right{
+                        gap:4px;
+                      }
+                    }
+                  }
+                }
+ }
