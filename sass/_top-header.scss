@@ -1,0 +1,20 @@
+.container{
+    ul{
+      max-width: 1072px;
+      @include flex(null,space-between);
+          margin: 0 auto;
+          padding: 9px 0px;
+
+              li{
+                @include flex(null);
+                gap:$spacing-xs;
+
+                          span {
+                    
+                            @include fontTypography($font-semibold,$size-sm,$white-color)
+                          }
+              }
+
+        
+}
+}
