@@ -16,4 +16,30 @@
         }
 }
 
+@include desktop(1200px){
+  .container{
+    ul{
+     margin:0px 10px;
+    }
+        
+ }
+}
 
+
+
+
+@include smallScreens(700px) {
+  .container{
+            ul{
+              display:block;
+                          li {
+                            display: none;
+                          }
+                          .contact-info{
+                            display:flex;
+                            align-items: center;
+                            justify-content: center;
+                          }
+            }
+      }
+}

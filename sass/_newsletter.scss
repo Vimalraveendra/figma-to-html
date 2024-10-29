@@ -83,3 +83,64 @@
          }
      }
 }
+
+
+@include desktop (1200px) {
+    
+    #newsletter{
+                .wrapper{
+                            .newsletter-container{
+                                height: 280px;
+                                max-height: 280px;
+                                @include flex(column,center,flex-start);
+                                padding:42px 20px;
+
+                                        .illustration{
+                                            display:none
+                                    
+                                        }
+
+                                        article{
+                                            h3{
+                                                font-size: $size-lg;
+                                      
+                                                    span{
+                                                    font-size: $size-xl;
+                                                    }
+                                            }
+                                            p{
+                                                @include fontTypography($font-regular,$size-sm,$primary-color);
+                                            }
+                                }
+
+                                        form{
+                                            margin-top: 18px;
+                                            .form-regulations{
+                                                display: none;
+                                            }
+                                        }
+
+                                    }
+                        } 
+            }
+        }
+
+        @include smallScreens(700px) {
+            #newsletter{
+                .wrapper{
+                            .newsletter-container{
+                              article{
+                                margin-right: 20px;
+                              }
+                              form{
+                                width:100%;
+
+                                .form-group{
+                                    width:85vw;
+                                }
+                              }
+                                
+                }
+            }
+        }
+    }
